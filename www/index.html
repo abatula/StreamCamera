@@ -83,6 +83,7 @@ function createImageLayer() {
   img.style.zIndex = -1;
   img.onload = imageOnload;
   img.onclick = imageOnclick;
+  img.width = 1280;
   img.src = "/?action=snapshot&n=" + (++imageNr);
   var webcam = document.getElementById("webcam");
   webcam.insertBefore(img, webcam.firstChild);
